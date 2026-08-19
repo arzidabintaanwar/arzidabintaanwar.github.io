@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Affiliations — Arzida Binta Anwar</title>
+<meta name="description" content="Professional and student affiliations of Arzida Binta Anwar.">
+<meta name="theme-color" content="#1B1713">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231B1713'/%3E%3Cpath d='M2 20 q4 -4 8 0 t8 0 t8 0 t8 0 V32 H2 Z' fill='%23D8A265' fill-opacity='.45'/%3E%3Cpath d='M2 25 q4 -4 8 0 t8 0 t8 0 t8 0 V32 H2 Z' fill='%23D8A265' fill-opacity='.9'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="index.html">Arzida Binta Anwar</a>
+  <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav">Menu</button>
+  <nav class="nav" id="siteNav" aria-label="Site">
+      <a href="index.html">About me</a>
+      <a href="credentials.html">Credentials</a>
+      <a href="research.html">Research</a>
+      <a href="publications.html">Publications</a>
+      <a href="experience.html">Experience</a>
+      <a href="awards.html">Awards</a>
+      <a href="affiliations.html" class="active">Affiliations</a>
+      <a href="extracurricular.html">Extra-curricular</a>
+      <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<div class="band page-head"><div class="container"><p class="crumb">Community</p><h1>Affiliations</h1><p class="sub">Professional societies and student organizations I've been part of.</p></div></div>
+<main>
+  <div class="container">
+    <div class="award-card">
+      <div>
+        <p class="yr">Aug 2022 — Jun 2024</p>
+        <strong>General Secretary &amp; Founding Member — ASCE Student Chapter, BUET</strong>
+        <span class="det">Served as the General Secretary of the 2023–24 executive panel and founding member of the 2022–23 executive panel of the chapter.</span>
+      </div>
+      <div class="thumbs">
+        <img src="images/affil-asce-panel.jpg" alt="ASCE Student Chapter BUET executive panel card — General Secretary">
+        <img src="images/affil-asce-cert.jpg" alt="ASCE certificate of acknowledgement 2022">
+      </div>
+    </div>
+
+    <div class="award-card">
+      <div>
+        <p class="yr">Jun 2022 — Sept 2024</p>
+        <strong>Director of Publications — BUET Photographic Society</strong>
+        <span class="det">Organized several photography exhibitions and events.</span>
+      </div>
+      <div class="thumbs one">
+        <img src="images/affil-bps-panel.jpg" alt="BUET Photographic Society executive committee card — Director, Publication">
+      </div>
+    </div>
+
+    <div class="award-card noimg">
+      <div>
+        <p class="yr">2022 — Present</p>
+        <strong>Associate Member — American Society of Civil Engineers (ASCE)</strong>
+      </div>
+    </div>
+    <div class="award-card noimg">
+      <div>
+        <p class="yr">2022 — Present</p>
+        <strong>Associate Member — American Concrete Institute (ACI)</strong>
+      </div>
+    </div>
+    <div class="award-card noimg">
+      <div>
+        <p class="yr">Apr 2021 — 2022</p>
+        <strong>Assistant Secretary (Research and Competition) — BUET Journalism Society</strong>
+      </div>
+    </div>
+    <div class="award-card noimg">
+      <div>
+        <p class="yr">2017</p>
+        <strong>Associate Member — Holy Cross College Debating Club</strong>
+      </div>
+    </div>
+  </div>
+</main>
+
+
+<footer>
+  <div class="container">
+    <div class="f-links">
+      <a href="mailto:arzidabinteanwar99@gmail.com">arzidabinteanwar99@gmail.com</a>
+      <a href="https://www.linkedin.com/in/arzida-binta-anwar-b4ab871b9/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.researchgate.net/profile/Arzida-Binta-Anwar" target="_blank" rel="noopener">ResearchGate</a>
+      <a href="https://orcid.org/0009-0005-4357-6450" target="_blank" rel="noopener">ORCID</a>
+      <!-- TODO: replace # with your CV PDF link -->
+      <a href="#" target="_blank" rel="noopener">Download CV</a>
+    </div>
+    <p class="f-copy">© <span class="year">2026</span> Arzida Binta Anwar · Dhaka, Bangladesh</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.querySelectorAll('.year').forEach(function(e){e.textContent=new Date().getFullYear();});
+  var t=document.getElementById('menuToggle'),n=document.getElementById('siteNav');
+  t.addEventListener('click',function(){var o=n.classList.toggle('open');t.setAttribute('aria-expanded',o);});
+})();
+</script>
+</body>
+</html>
