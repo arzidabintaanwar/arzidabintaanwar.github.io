@@ -1,40 +1,55 @@
-# Arzida Binta Anwar — Personal Website (REV 08)
+# Arzida Binta Anwar — Personal Website
 
-A multi-page academic portfolio ("Portrait" design: beige/grey gradients with charcoal + amber-glow banners, palette drawn from the profile photo). No build step, no dependencies.
+A multi-page academic portfolio. Warm beige/charcoal palette drawn from the profile photo. No build step, no dependencies — plain HTML and CSS.
 
 ## What's inside
 
 ```
-index.html            Home — greeting, portrait, about me
-credentials.html      Education (with CGPA/GPA), relevant courses, technical skills
-research.html         Research interests, MSc thesis, RA work, BSc thesis (+ lab & vetiver images)
+index.html            About me — greeting, portrait, about, quick links
+credentials.html      Education, relevant courses, laboratory testing, technical skills
+research.html         Research interests, M.Sc. thesis, forensic research, RA work, B.Sc. thesis
 publications.html     Journal & conference papers
-experience.html       GeoStruct, conference & field visits, capstone (+ photos)
-awards.html           Awards & achievements (+ poster/trophy photos)
-affiliations.html     Societies & student organizations (+ panel cards)
-extracurricular.html  Photography, exhibition photos, Instagram preview card
-styles.css            Shared stylesheet
-images/               All optimized photos (already included)
+experience.html       GeoStruct, conference & field visits, capstone project
+awards.html           Awards & achievements, with photos
+affiliations.html     Societies & student organizations, with photos
+extracurricular.html  Photography, exhibitions, Instagram strip
+contact.html          Email, LinkedIn, ResearchGate, Google Scholar, ORCID, Instagram, location
+styles.css            Shared stylesheet (colours, fonts, layout)
+cv.pdf                CV file — currently unused; see "CV download" below
+images/               All photos
 ```
 
-## Publish on GitHub Pages
+## Publishing / updating on GitHub Pages
 
-1. Create a **public** repository — name it `YOUR-USERNAME.github.io` (site at `https://YOUR-USERNAME.github.io/`) or anything else, e.g. `portfolio` (site at `https://YOUR-USERNAME.github.io/portfolio/`).
-2. Click **Add file → Upload files** and drag in **everything from this folder, including the `images` folder**. Commit.
-3. **Settings → Pages** → Source: *Deploy from a branch* → branch `main`, folder `/ (root)` → Save.
-4. Wait 1–2 minutes and open the URL shown at the top of the Pages settings.
+The site is live at **arzidabintaanwar.github.io**. To update it, open the file in the
+repository, click the pencil icon, edit, and click **Commit changes** — the live site
+refreshes itself within a minute. To replace a photo, upload a new image into `images/`
+using the **same filename** as the old one.
 
-Edits made on GitHub (pencil icon → commit) go live automatically within a minute.
+When new files arrive here, use **Add file → Upload files** and drop them in; same-named
+files are replaced automatically.
 
-## Remaining TODOs (search files for "TODO")
+## CV download
 
-- **CV link** — upload your CV as `cv.pdf` to the repo and change the Download CV href to `cv.pdf`, or paste a Google Drive share link. Appears in the header of every page and on the Home page.
+Every "Download CV" button points to the Google Drive copy:
 
-LinkedIn, ResearchGate, ORCID, Instagram, the ICACE paper link, phone and WhatsApp are all wired in. Only the CV PDF link remains a TODO. A Google Scholar link can be added later once the profile exists.
+```
+https://drive.google.com/uc?export=download&id=1QXo4aRE41BPnUC29M4MG7DPqIUFfkSeE
+```
+
+That URL downloads the file straight away instead of opening a Drive preview page. It only
+works while the Drive file is shared as **"Anyone with the link"** — check this in Drive under
+Share → General access.
+
+**Alternative (no Drive needed):** `cv.pdf` in this repository is the same document. To use it
+instead, search the files for `drive.google.com/uc?export=download` and replace each full URL
+with `cv.pdf`. It appears twice on `index.html` (the hero button and the footer) and once in
+every other page's footer.
 
 ## Notes
 
-- BSc shows both the CGPA (2.80) and the final-term GPA (3.15) per your instruction; MSc shows CGPA.
-- The Instagram card is a hand-built preview (your real DP, handle, five photos from your profile) linking to
-  https://www.instagram.com/arzida_orchi/ — Instagram doesn't allow live profile embeds on external sites.
-- To change any photo, replace the file in `images/` keeping the same filename.
+- Supervisor names on the Research page link to their BUET faculty profiles.
+- The Instagram section is a hand-built preview (profile picture, handle, six photographs)
+  linking to https://www.instagram.com/arzida_orchi/ — Instagram does not allow live profile
+  embeds on external sites.
+- Education shows years only; GPAs are intentionally not displayed.
